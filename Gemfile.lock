@@ -1,6 +1,5 @@
 GEM
   remote: http://rubygems.org/
-  remote: https://rails-assets.org/
   specs:
     activesupport (4.2.5)
       i18n (~> 0.7)
@@ -120,7 +119,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails-assets-tether (1.1.1)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -159,7 +157,6 @@ DEPENDENCIES
   middleman-blog (~> 3.5.3)
   middleman-blog-drafts (~> 0.3.3)
   middleman-livereload
-  rails-assets-tether (>= 1.1.0)!
   redcarpet
 
 BUNDLED WITH
