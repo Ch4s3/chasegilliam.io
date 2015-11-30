@@ -1,0 +1,26 @@
+.img-container {
+  position: relative;
+  overflow: hidden;
+  height: 10em;
+  img {
+    transform: scale(1.05);
+    height: auto;
+    margin-top: -20%;
+    width: 100%;
+    filter: blur(1px);
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+  }
+}
+.avatar {
+  position: absolute;
+  left: 50%;
+  margin-left: -45px;
+  bottom: 6em;
+  -webkit-box-shadow: 0 0 0 8px #fff;
+  box-shadow: 0 0 0 8px #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
