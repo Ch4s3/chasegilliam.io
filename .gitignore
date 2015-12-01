@@ -9,6 +9,8 @@
 
 # Ignore the build directory
 /build
+/tmp
+/public
 
 # Ignore cache
 /.sass-cache
