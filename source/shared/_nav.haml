@@ -1,9 +1,21 @@
-%nav.navbar.navbar-light.bg-faded
-  %a.navbar-brand{:href => "#"} ChaseGilliam.io
-  %ul.nav.navbar-nav
-    %li.nav-item.active
-      %a.nav-link{:href => "#"} Home
-    %li.nav-item
-      %a.nav-link{:href => "#"} About
-    %li.nav-item
-      %a.nav-link{:href => "#"} Contact
+-# %nav.white-container
+-#   .container
+-#     .nav-wrapper
+-#       %a.brand-logo{:href => "#"} ChaseGilliam.io
+-#       %ul#nav-mobile.right.hide-on-med-and-down
+-#         %li
+-#           %a{href: "/index.html"} Home
+-#         %li
+-#           %a{href: "about.html"} About
+-#         %li
+-#           %a{href: "Contact.html"} Contact
+%nav.white{:role => "navigation"}
+  .nav-wrapper.container
+    %a#logo-container.brand-logo{:href => "#"} Logo
+    %ul.right.hide-on-med-and-down
+      %li
+        %a.underline{:href => "#"} Blog
+      %li
+        %a.underline{:href => "#"} About
+      %li
+        %a.underline{:href => "#"} Contact

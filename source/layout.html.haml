@@ -8,12 +8,19 @@
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = stylesheet_link_tag "all"
     = javascript_include_tag "all"
-    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.js"}
   %body
-    = partial "shared/_nav"
-    .container
-      .col-xs-12.col-md-8
-        = yield
-      .col-xs-12.col-md-4
-        = partial "shared/right_column"
+    %header
+      = partial "shared/_nav"
+    %main
+      .row
+        .parallax-container.dimmed
+          .parallax
+            %img{src: "images/par.jpg"}
+      .row
+        .section
+        = partial "shared/profile"
+      .brand-blue-container
+        .row
+          .section
+          =partial "shared/article_boxes"
     = partial "shared/_footer"

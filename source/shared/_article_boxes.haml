@@ -1,13 +1,12 @@
-- page_articles.each_with_index do |article, i|
-  .card.m-t-lg
-    .card-header
-      Chase in
-      = link_to article.tags.first, tag_path(article.tags.first)
-      = article.date.strftime('%b %e')
-    .card-block
-      .card-title
-        %h4= link_to article.title, article
-      .card-text
-        =article.summary(250)
-    .card-footer
-      = link_to "Full Article", article
+.container
+  - page_articles[0..3].each_with_index do |article, i|
+    .col.s4
+      .card
+        .card-content
+          .card-title
+            %h4= link_to article.title, article
+          .card-text.flow-text
+            =article.summary(425)
+        .card-action
+          = link_to "Full Article", article
+          = link_to article.tags.first, tag_path(article.tags.first)

@@ -1,0 +1,5 @@
+.card.large
+  .card-content
+    %h5 Recent Posts
+    -blog.articles[0...5].each do |article|
+      %p=article.title

@@ -1,0 +1,42 @@
+body {
+  background-color: #fafafa;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  color: $brand-blue;
+}
+
+.brand-blue-container {
+    background-color: $brand-blue !important;
+}
+
+.parallax-container {
+  height: 90vh;
+}
+
+.parallax img {
+  width: 100%;
+}
+
+.dimmed {
+  position: relative;
+}
+
+.dimmed:after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
