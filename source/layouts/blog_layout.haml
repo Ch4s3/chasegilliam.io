@@ -1,3 +1,6 @@
 = wrap_layout :layout do
-  %h1=current_page.title
-  %p=current_page.body
+  .card.z-depth-2
+    .card-content
+      %span.card-title
+        %h2=current_page.title
+      =current_page.body

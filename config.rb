@@ -37,9 +37,8 @@ end
 
 page "/feed.xml", layout: false
 
-configure :development do
-  activate :livereload
-end
+activate :livereload
+
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'

@@ -14,13 +14,20 @@
         -ms-filter: blur(1px);
   }
 }
+
+.profile {
+  .card-content {
+    padding-top: 2.5em;
+  }
+}
+
 .avatar {
   position: absolute;
   left: 50%;
   margin-left: -45px;
   bottom: 6em;
   -webkit-box-shadow: 0 0 0 8px #fff;
-  box-shadow: 0 0 0 8px #fff;
+  box-shadow: 0 0 0 6px #fff;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 999;
 }
