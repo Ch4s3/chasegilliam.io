@@ -1,3 +1,4 @@
-//= require_tree .
 //= require jquery
 //= require materialize-sprockets
+//= require highlight.pack
+//= require main

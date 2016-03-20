@@ -1,4 +1,4 @@
-.card.profile.z-depth-1
+.card.profile
   .card-image.img-container
     %img.card-img-top{src: "/images/bike_bridge.jpg"}
   %img.avatar{alt:"chase avatar", src: "/images/profile.jpg", height: "90px", width: "90px"}
@@ -8,7 +8,6 @@
     %span.card-title Chase Gilliam
     %p.card-text.text-xs-center Writing Ruby, Java & Elixir in Baltimore
 
-%ul.collection.z-depth-1
+.collection
   - blog.tags.each do |tag, articles|
-    .collection-item
-      %a{ href: "/blog/tags/#{tag}.html" }= tag
+    %a.collection-item{ href: "/blog/tags/#{tag}.html" }= tag
