@@ -1,0 +1,71 @@
+[hidden] { display: none; }
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.awesomplete > ul {
+	@extend .z-depth-1;
+	z-index: 100;
+	border-radius: 2px;
+	background-color: white;
+	line-height: 1em;
+	font-size: 16;
+	position: absolute;
+	left: 0;
+	z-index: 100;
+	min-width: 100%;
+	margin-top: -1.1em;
+}
+
+
+.awesomplete > ul[hidden],
+.awesomplete > ul:empty {
+	display: none;
+}
+
+@supports (transform: scale(0)) {
+	.awesomplete > ul {
+		transition: .3s cubic-bezier(.4,.2,.5,1.4);
+		transform-origin: 1.43em -.43em;
+	}
+
+	.awesomplete > ul[hidden],
+	.awesomplete > ul:empty {
+		opacity: 0;
+		transform: scale(0);
+		display: block;
+		transition-timing-function: ease;
+	}
+}
+
+.awesomplete > ul > li {
+	position: relative;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.awesomplete > ul > li:hover {
+	background: $primary-color;
+	color: white;
+}
+
+.awesomplete > ul > li[aria-selected="true"] {
+	background: $primary-color;
+	color: white;
+}
+
+.awesomplete mark {
+	background: $muted-green;
+	color: white;
+}
+
+.awesomplete li:hover mark {
+	background: $primary-color;
+}
+
+.awesomplete li[aria-selected="true"] mark {
+	background: $primary-color;
+	color: inherit;
+}

@@ -1,3 +1,6 @@
+require "source/lib/custom_helpers"
+helpers CustomHelpers
+
 ###
 # Blog settings
 ###

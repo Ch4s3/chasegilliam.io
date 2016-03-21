@@ -9,10 +9,17 @@
     = stylesheet_link_tag "all"
     = javascript_include_tag "all"
   %body
-    = partial "shared/_nav"
-    .container
-      .row
-        .col.s12.col.l8
-          = yield
-        .col.s12.col.l4
-          = partial "shared/right_column"
+    .img-container
+      = partial "shared/_nav"
+    .row
+      .col.s4.offset-s4
+        %img.avatar{ alt:"chase avatar", src: "/images/profile.jpg" }
+    .row.articles
+      .input-field.col.s6.offset-s3
+        %input#search.awesomplete{ placeholder: "Search for Articles of Tags", type: "text", "data-list" => "#{tags_and_titles}" }
+          %label{ for: "search" } Search
+      .col.s10.offset-s1.col.l8.offset-l2
+        = yield
+    -# .row.articles
+    -#   .col.s10.offset-s1.col.l6.offset-l3
+    -#     = partial "shared/tags_box"

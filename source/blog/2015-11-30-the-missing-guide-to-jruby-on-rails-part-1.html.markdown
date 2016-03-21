@@ -20,13 +20,13 @@ These are all great reasons, especially concurrency and gains in speed. With a b
 
 ##### Install RVM #####
 
-  ````
+  ````bash
   \curl -sSL https://get.rvm.io | bash
   ````
 
 ##### Check for Rubies #####
 
-  ````
+  ````bash
   rvm list known
   ````
 
@@ -34,7 +34,7 @@ These are all great reasons, especially concurrency and gains in speed. With a b
 
 ##### Install JRuby #####
 
-  ````
+  ````bash
   rvm install jruby-9.0.5.0
   ````
 
@@ -42,7 +42,7 @@ These are all great reasons, especially concurrency and gains in speed. With a b
 
 ##### Once that is done run: #####
 
-  ````
+  ````bash
   rvm list
   ````
 
@@ -50,13 +50,13 @@ These are all great reasons, especially concurrency and gains in speed. With a b
 
 ##### Next, install Rails for JRuby #####
 
-  ````
+  ````bash
   gem install rails -v '4.2.6' --platform jruby
   ````
 
 ##### Start a new Rails project with JRuby #####
 
-  ````
+  ````bash
   rails _4.2.6_ new jruby_rails_tutorial --database=postgresql
   ````
 
@@ -74,7 +74,7 @@ These are all great reasons, especially concurrency and gains in speed. With a b
 
   run the server as follows:
 
-  ```
+  ```bash
   rails server
   ```
 

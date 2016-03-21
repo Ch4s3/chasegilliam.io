@@ -1,20 +1,114 @@
-.container {
-  width: 80%;
-  padding-top: 3rem
+body {
+  overflow-x: hidden;
 }
 
 .brand-logo {
-    padding-left: 1rem !important;
+  padding-left: 1rem !important;
 }
 
-a{
+a {
   color: $secondary-color;
 }
 
 .card-action {
   a {
-    color: #5C8A70 !important;
+    color: $muted-green !important;
   }
 }
 
 p > code.hljs { display: inline; }
+
+.articles {
+  margin-top: 5em;
+}
+.article {
+  h1, h2, h3,
+    h4, h5, h6 {
+        color: darken($secondary-color, 5%);
+    }
+  a { color: $muted-green }
+}
+nav {
+  a {
+    font-size: 2em;
+    font-weight:300;
+  }
+  background-image: url('/images/bike_bridge.jpg');
+  background-size: 100%;
+  background-position: 65% 55%;
+  box-shadow: none;
+  height: 35rem;
+  border-bottom-right-radius: 80% 10%;
+  border-bottom-left-radius: 80% 10%;
+  width: 110%;
+  overflow: hidden;
+  margin-left: -5%;
+}
+
+.nav-wrapper {
+  .brand-logo {
+    font-size: 3rem;
+  }
+
+  .nav-box {
+    margin: auto;
+    position: absolute;
+    top: 35%; left: 0; bottom: 0; right: 0;
+  }
+  ul {
+    position: relative;
+    float: left;
+    display: block;
+    left: 50%;
+  }
+  ul li {
+    position: relative;
+    float: left;
+    display: block;
+    right: 50%;
+
+  }
+  ul li a {
+    font-size: 1.55rem;
+  }
+  ul li a:hover {
+    color: $muted-green;
+  }
+}
+
+.nav-overlay {
+  border-radius: inherit;
+  background: rgba(39,62,84,0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+//.img-container {
+//  overflow: hidden;
+//  height: 40em;
+//  background-image: url('/images/bike_bridge.jpg');
+//  background-size: cover;
+//  //img {
+//  //  transform: scale(1.05);
+//  //  height: auto;
+//  //  margin-top: -20%;
+//  //  width: 100%;
+//  //  filter: blur(2px);
+//  //      -webkit-filter: blur(1px);
+//  //      -moz-filter: blur(1px);
+//  //      -o-filter: blur(1px);
+//  //      -ms-filter: blur(1px);
+//  //}
+//}
+
+.avatar {
+  height: 9em;
+  width: 9em;
+  display: block;
+  margin: 0 auto;
+  margin-top: -3em;
+  -webkit-box-shadow: 0 0 0 8px #fff;
+  box-shadow: 0 0 0 6px #fff;
+  border-radius: 50%;
+  z-index: 999;
+}

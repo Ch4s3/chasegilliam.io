@@ -1,10 +1,16 @@
 %nav
-  .nav-wrapper
-    %a.brand-logo ChaseGilliam.io
-    %ul#nav-mobile.right.hide-on-med-and-down
-      %li
-        %a{ href: "/" } Home
-      %li
-        %a{ href: "/about.html" } About
-      %li
-        %a{ href: "/contact.html" } Contact
+  .nav-overlay
+    .nav-wrapper
+      .nav-box
+        .row.center
+          .col.s4.offset-s4
+            %h3 ChaseGilliam.io
+        .row
+          .col.s4.offset-s4
+            %ul.hide-on-med-and-down
+              %li
+                %a{ href: "/" } Home
+              %li
+                %a{ href: "/about.html" } About
+              %li
+                %a{ href: "/contact.html" } Contact

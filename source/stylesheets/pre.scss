@@ -1,0 +1,23 @@
+pre {
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+
+  code.hljs {
+    padding: 2rem;
+    overflow:  auto;
+    max-height: 80rem;
+    white-space: pre;
+
+    &,
+    span {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    span {
+      white-space: pre;
+    }
+  }
+}
