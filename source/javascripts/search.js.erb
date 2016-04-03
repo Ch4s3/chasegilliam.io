@@ -1,0 +1,27 @@
+searchIdx = {
+  <% blog.articles.each do |article| %>
+    <%= article.title.to_json %>: "<%= article.url %>",
+  <% end %>
+  <% blog.tags.each do |tag, _| %>
+    <%= tag.to_json %>: "<%= tag_path(tag) %>",
+  <% end %>
+}
+
+var ready;
+
+ready = function() {
+  var input = $(".awesomplete")[0];
+  var awesomplete = new Awesomplete(input, {
+    minChars: 1,
+    maxItems: 5,
+    autoFirst: true
+  });
+
+  $(".awesomplete").on("awesomplete-selectcomplete", function(e) {
+    var url = searchIdx[$(e.target).val()];
+    Turbolinks.visit(url);
+  });
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);

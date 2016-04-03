@@ -10,3 +10,4 @@ gem "materialize-sass"
 gem "jquery-middleman"
 gem "redcarpet"
 gem "middleman-livereload"
+gem "turbolinks", require: false
