@@ -33,16 +33,13 @@ nav {
     font-size: 2em;
     font-weight:300;
   }
-  background-image: url("http://res.cloudinary.com/dbwkpvbdo/image/upload/f_auto/v1459710559/bike_bridge_k5piva.jpg");
+  background-image: url("http://res.cloudinary.com/dbwkpvbdo/image/upload/c_scale,f_auto,q_75,w_2000/v1459710559/bike_bridge_k5piva.jpg");
   background-size: 100%;
   background-position: 65% 55%;
   box-shadow: none;
   height: 35rem;
-  border-bottom-right-radius: 80% 10%;
-  border-bottom-left-radius: 80% 10%;
-  width: 110%;
+  border-radius: 0% 0% 75% 75% / 0% 0% 25% 25%;
   overflow: hidden;
-  margin-left: -5%;
 }
 
 .nav-wrapper {
@@ -83,23 +80,6 @@ nav {
   height: 100%;
   z-index: 2;
 }
-//.img-container {
-//  overflow: hidden;
-//  height: 40em;
-//  background-image: url('/images/bike_bridge.jpg');
-//  background-size: cover;
-//  //img {
-//  //  transform: scale(1.05);
-//  //  height: auto;
-//  //  margin-top: -20%;
-//  //  width: 100%;
-//  //  filter: blur(2px);
-//  //      -webkit-filter: blur(1px);
-//  //      -moz-filter: blur(1px);
-//  //      -o-filter: blur(1px);
-//  //      -ms-filter: blur(1px);
-//  //}
-//}
 
 .avatar {
   height: 9em;

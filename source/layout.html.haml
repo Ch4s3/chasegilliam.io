@@ -1,6 +1,8 @@
 <!doctype html>
 %html
   %head
+    %link{:href => "images/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+    %link{:href => "images/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %title
@@ -13,7 +15,7 @@
       = partial "shared/_nav"
     .row
       .col.s4.offset-s4
-        %img.avatar{ alt:"chase avatar", src: "/images/profile.jpg" }
+        %img.avatar{ alt:"chase avatar", src: "http://res.cloudinary.com/dbwkpvbdo/image/upload/c_scale,f_auto,q_75,w_180/v1459710568/profile_kfwu2n.jpg" }
     .row.articles
       .input-field.col.s6.offset-s3
         %input#search.awesomplete{list: "articleList", placeholder: "Search for Articles", type: "text"}
