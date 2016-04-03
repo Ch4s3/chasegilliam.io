@@ -1,10 +1,13 @@
+require "source/lib/custom_helpers"
+helpers CustomHelpers
+
 ###
 # Blog settings
 ###
 
 # Time.zone = "UTC"
-set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true
 set :markdown_engine, :redcarpet
+set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -37,9 +40,7 @@ end
 
 page "/feed.xml", layout: false
 
-configure :development do
-  activate :livereload
-end
+activate :livereload
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'

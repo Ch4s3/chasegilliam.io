@@ -1,3 +1,8 @@
-//= require_tree .
 //= require jquery
-//= require bootstrap-sprockets
+//= require materialize-sprockets
+//= require turbolinks
+//= require highlight.pack
+//= require awesomplete
+//= require preFix
+//= require main
+//= require search.js.erb
