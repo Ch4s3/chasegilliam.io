@@ -22,12 +22,12 @@ p > code.hljs { display: inline; }
 
 .articles {
   @media only screen
-      and (max-device-width: 640px),
-      only screen and (max-device-width: 667px),
-      only screen and (max-width: 480px) {
-        margin-top: 0;
-      }
-  margin-top: 5rem;
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px) {
+      margin-top: 0;
+    }
+  margin-top: 3rem;
 }
 .article {
   h1, h2, h3,
