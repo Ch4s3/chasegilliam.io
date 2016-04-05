@@ -11,8 +11,16 @@ nav {
       only screen and (max-device-width: 667px),
       only screen and (max-width: 480px) {
         height: $nav-height * .4;
-        border-radius: 0% 0% 35% 35% / 0% 0% 12% 12%;
+        border-radius: 0% 0% 45% 45% / 0% 0% 15% 15%;
         h3{ font-size: 1.5rem; }
+  }
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px)
+    and (orientation : portrait) {
+      height: $nav-height * .375;
+      border-radius: 0% 0% 45% 45% / 0% 0% 15% 15%;
+      h3{ font-size: 1.25rem; }
   }
   background-image: url("http://res.cloudinary.com/dbwkpvbdo/image/upload/c_scale,f_auto,q_75,w_2000/v1459710559/bike_bridge_k5piva.jpg");
   background-size: 100%;
@@ -64,17 +72,27 @@ nav {
     and (max-device-width: 640px),
     only screen and (max-device-width: 667px),
     only screen and (max-width: 480px){
-      height: 4.5em;
-      width: 4.5em;
-      margin-top: -2em;
+      height: 4.5rem;
+      width: 4.5rem;
+      margin-top: -2rem;
       -webkit-box-shadow: 0 0 0 4px #fff;
       box-shadow: 0 0 0 4px #fff;
     }
-  height: 9em;
-  width: 9em;
+    @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 568px)
+      and (orientation : portrait) {
+        height: 4rem;
+        width: 4rem;
+        margin-top: -1.75rem;
+        -webkit-box-shadow: 0 0 0 4px #fff;
+        box-shadow: 0 0 0 4px #fff;
+    }
+  height: 9rem;
+  width: 9rem;
   display: block;
   margin: 0 auto;
-  margin-top: -3em;
+  margin-top: -3rem;
   -webkit-box-shadow: 0 0 0 6px #fff;
   box-shadow: 0 0 0 6px #fff;
   border-radius: 50%;
