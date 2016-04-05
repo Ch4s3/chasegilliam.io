@@ -6,3 +6,4 @@
 //= require preFix
 //= require main
 //= require search.js.erb
+//= require analytics
