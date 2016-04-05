@@ -5,6 +5,7 @@
     %link{href: "images/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
     %meta{charset: "utf-8"}/
     %meta{content: "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
     %title
       ChaseGilliam.io#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
@@ -17,7 +18,7 @@
       .col.s4.offset-s4
         %img.avatar{ alt:"chase avatar", src: "http://res.cloudinary.com/dbwkpvbdo/image/upload/c_scale,f_auto,q_75,w_180/v1459710568/profile_kfwu2n.jpg" }
     .row.articles
-      .input-field.col.s6.offset-s3
+      .input-field.col.s8.offset-s2.l6.offset-l3
         %input#search.awesomplete{list: "articleList", placeholder: "Search for Articles", type: "text"}
           %datalist#articleList
             - blog.articles.each do |article|
