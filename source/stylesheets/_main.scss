@@ -35,4 +35,10 @@ p > code.hljs { display: inline; }
         color: darken($secondary-color, 5%);
     }
   a { color: $muted-green }
+
+  ul { list-style: disc inside !important; }
+  ul li {
+    list-style: disc inside !important;
+    padding-left: 0.5em;
+  }
 }
